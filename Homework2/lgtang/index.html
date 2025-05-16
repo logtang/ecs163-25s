@@ -1,0 +1,47 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<title>Homework 2, D3 Implementation</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <div id="dashboard-container">
+    
+    <!-- Left 40% Panel -->
+    <div id="context-panel">
+      <div class="half-height-vis" id="vis1-section">
+        <svg id="vis1"></svg>
+        <div class="vis-caption">fig. 1 - What changes between 1970 and 1980? Terrorist attacks by year more than quadruple.</div>
+      </div>
+      <div class="half-height-vis" id="vis2-section">
+        <svg id="vis2"></svg>
+        <div class="vis-caption">fig. 2 - Central America in particular takes up a surprisingly large portion considering its population.</div>
+      </div>
+    </div>
+
+    <!-- Right 60% Panel -->
+    <div id="focus-panel">
+      <svg id="vis3"></svg>
+      <div class="vis-caption">fig. 3 - Main insight, advanced visualization.</div>
+      <h2>The Forgotten World War</h2>
+      <div>In the 1970s to 80s, the United States waged war on three different fronts as part of a broader, global campaign of regime change.</div>
+      &nbsp;
+      <div>The numbers haven't forgotten.</div>
+      &nbsp;
+      <div>In this dashboard, each visualization zooms in on a different layer of the same truth: the intense concentration of terrorist activity in Central America during the 1970s and 1980s. The first visualization reveals a sharp global increase in attacks across that decade — a fourfold surge that hints at geopolitical upheaval. The second visualization refines that picture, highlighting how disproportionately Central America contributed to this spike relative to its population. Finally, the third visualization exposes the granular details: a country-by-country breakdown that illustrates just how sustained and uneven the violence was within the region itself. Together, these figures surface a violent trend often omitted from historical narratives — one in which Central America stands not just as a victim, but as a focal point in a broader, forgotten conflict.</div>
+      &nbsp;
+      <div>This dashboard is structured around the focus-context paradigm, where broad contextual patterns gradually guide the viewer toward a more precise insight.</div>
+    </div>
+
+  </div>
+  <script src="main.js"></script> 
+</body>
+
+</html>
+
+
