@@ -1,0 +1,84 @@
+/* ---- Global Stylings ---- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+/* ---- The Entire Dashboard ---- */
+
+#dashboard-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* "Context" Panel Instantiation */
+#context-panel { 
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+/* The RESPECTIVE Half-Height Vis Divs */
+.half-height-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  min-height: 0;
+}
+.half-height-div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+/* "Focus" Panel, Instantiation */
+#focus-panel { 
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  min-height: 0;
+}
+
+/* ---- Visualizations, SVG Elements ---- */
+
+#vis1, 
+#vis2, 
+#vis3 {
+  overflow: visible;
+}
+
+/* Adjust vis3 layout and scale */
+#vis3 {
+  margin-top: 40px;           /* Move it downward */
+  transform: scale(1.4);      /* Scale down to 80% */
+  transform-origin: top;      /* Keep scaling anchored at top */
+}
+
+.dashboard-overview {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: none;
+  background: #f8f9fa;
+  border-bottom: 3px solid #36454F;
+  border-radius: 0;
+  padding: 10px 10px;
+  font-size: 1.25em;
+  color: #222;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<title>Homework 2, D3 Implementation</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <div id="dashboard-overview" class="dashboard-overview" style="margin-top:0; margin-bottom:0; border-bottom: 3px solid #36454F; border-radius: 0; width: 100%; max-width: none;">
+    <h3>Dashboard Overview</h3>
+    <p>
+      Explore Latin American as a significant contributor to the 70s' in terrorism-related deaths.
+    </p>
+  </div>
+  <div id="dashboard-container">
+
+    
+    <!-- Left 40% Panel -->
+    <div id="context-panel">
+      <div class="half-height-div" id="vis1-section">
+        <svg id="vis1"></svg>
+        <div id="vis1-blurb" class="vis-blurb" style="margin-top:24px;">
+          <em>Brush to select a year range</em>
+        </div>
+      </div>
+      <div class="half-height-div" id="vis2-section">
+        <svg id="vis2"></svg>
+      </div>
+    </div>
+    
+    <!-- Right 60% Panel -->
+    <div id="focus-panel">
+        <svg id="vis3"></svg>
+        <div id="vis3-blurb" class="vis-blurb" style="margin-top:200px;">
+          <em>Select a stream and see a description of the corresponding country. Click X to close the popup.</em>
+        </div>
+    </div>
+    
+
+
+
+  </div>
+  <script src="main.js"></script> 
+</body>
+
+</html>
+
+
